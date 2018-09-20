@@ -3,7 +3,7 @@ a Python3 implementation of FizzBuzz
 Range of generated numbers is setable
 Which rules are ran is also setable
 
-See rules below \/
+See rules below \\/
 
 Rule 3:
 all multiples of 3 withh become "Fizz"

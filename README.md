@@ -1,6 +1,7 @@
 a Python3 implementation of FizzBuzz
 
 Range of generated numbers is setable
+
 Which rules are ran is also setable
 
 See rules below \\/

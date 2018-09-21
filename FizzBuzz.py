@@ -1,7 +1,7 @@
 #main loop
 
 def main():
-    print("start")
+    print()
 
     a = getNum("starting", "")
     b = getNum("ending", "")
@@ -64,6 +64,7 @@ def getRules():
     return r
 
 def getNum(s, ex):
+    print()
     getting = True
 
     while(getting):
@@ -79,13 +80,12 @@ def getNum(s, ex):
         except ValueError:
             getting = True
             print("only numbers may be entered")
-    print()
     return num
 
 def generateNums(a, b):
     print()
     print("generating nums...")
-    x = list(range(a, b))
+    x = list(range(a, b+1))
     print("done generating.")
     print()
     return x
@@ -95,6 +95,7 @@ def doPrint(num):
         print(num)
 
 def doRules(x, r):
+    print()
     i = 0
     y = x
     print("doing rules...")
@@ -153,6 +154,8 @@ def Rule7(num, numSoFar):
 def Rule11(num, numSoFar):
     if(num % 11 == 0):
         num = "BONG!"
+    else:
+        return numSoFar
     return num
 
 def Rule13(num, numSoFar):
@@ -166,7 +169,7 @@ def Rule13(num, numSoFar):
 def Run():
     while(True):
         main()
-        print("")
+        print()
 
         print("press enter to run again")
         c = input("=> ")
